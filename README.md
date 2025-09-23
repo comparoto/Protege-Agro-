@@ -33,7 +33,7 @@ Sistema integrado de monitoramento, alerta e adaptação climática para cadeias
 - Gestão de Adaptação
 
 # ⚙ Ferramentas 
-
+- [Google Docs](https://docs.google.com/document/d/1KDO9MxiYDKBnw9lnvS85uLl6mBt_EzVFnv6Unucp64M/edit?usp=sharing)
 - [Trello](https://trello.com/invite/b/68d2ee91ba3756cc5398c14e/ATTI9f40d8985fac5ee74afa4ea9a23061b68BA59430/projeto)
 - [Figma](link)
 
