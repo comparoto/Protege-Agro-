@@ -1,5 +1,6 @@
 # Protege Agro 👨‍🌾
-<img width="1024" height="418" alt="protege-agro" src="https://github.com/user-attachments/assets/bd54c9c4-06ac-490a-a5bf-44e534e61832" />
+![banner](protege-agro.png)
+
 
 # ODS 13
 - Ação contra a mudança global do clima
@@ -35,14 +36,14 @@ Sistema integrado de monitoramento, alerta e adaptação climática para cadeias
 # ⚙ Ferramentas 
 - [Google Docs](https://docs.google.com/document/d/1KDO9MxiYDKBnw9lnvS85uLl6mBt_EzVFnv6Unucp64M/edit?usp=sharing)
 - [Trello](https://trello.com/invite/b/68d2ee91ba3756cc5398c14e/ATTI9f40d8985fac5ee74afa4ea9a23061b68BA59430/projeto)
-- [Figma](link)
+- [Figma](https://trello.com/invite/b/68d3017f957b203c71729554/ATTIfd6518690457f8129206f304484740d71D224D60/protege-agro)
 
 # Quadro Kanban - Trello
 
-img
+![trello board](Trello.png)
 
 # Integrantes
-- [Iza Malafaia](https://github.com/Iza-Malafaia) - Função
-- [Juliana Comparoto](https://github.com/comparoto) - Função
-- [Joanna Farias](https://github.com/Joanna-Farias) - Função
-- [Maria Luiza](https://github.com/alumiria) - Função
+- [Iza Malafaia](https://github.com/Iza-Malafaia) 
+- [Juliana Comparoto](https://github.com/comparoto) 
+- [Joanna Farias](https://github.com/Joanna-Farias) 
+- [Maria Luiza](https://github.com/alumiria) 
