@@ -36,6 +36,7 @@ Sistema integrado de monitoramento, alerta e adaptação climática para cadeias
 # ⚙ Ferramentas 
 - [Google Docs](https://docs.google.com/document/d/1KDO9MxiYDKBnw9lnvS85uLl6mBt_EzVFnv6Unucp64M/edit?usp=sharing)
 - [Trello](https://trello.com/invite/b/68d3017f957b203c71729554/ATTIfd6518690457f8129206f304484740d71D224D60/protege-agro)
+- [Canva - Análise de Concorrentes (começo)](https://www.canva.com/design/DAG0YnGGmKY/Aaf44RKr9_4QTo4fnZxI7w/view?utm_content=DAG0YnGGmKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb124fd270e)
 
 # Quadro Kanban - Trello
 
