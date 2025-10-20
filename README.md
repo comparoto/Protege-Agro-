@@ -5,10 +5,12 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # ⚙ Ferramentas 
 - [Trello](https://trello.com/invite/b/68d3017f957b203c71729554/ATTIfd6518690457f8129206f304484740d71D224D60/protege-agro)
+- [Canvas](https://www.canva.com/design/DAG15oNQx-Y/zk88XYvcX6vCVYgWV9U7pA/view?utm_content=DAG15oNQx-Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb21803a279)
+- [Figma](https://www.figma.com/file/D40oNqrRF186K4n1DSMg0C?node-id=0:1&locale=pt-br&type=design)
 
 # 📋 Diagrama de Atividades
 
-- inserir link -
+- [Diagrama de Atividades](https://lucid.app/lucidchart/e23a7c07-efd2-42b4-b983-079e704f40e4/edit?viewport_loc=-1658%2C-696%2C2558%2C1130%2C0_0&invitationId=inv_deaa4bf7-fc0c-4252-a694-e9bf0f126398)
 
 # 👾 Issues e bugs tracker
 
