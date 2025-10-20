@@ -14,11 +14,11 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 👾 Issues e bugs tracker
 
-- inserir link/ img -
+![Issues e bugs tracker](issues.png)
   
 # ✅ Quadro - Trello
 
-![trello board](Trello.png)
+![trello board](quadro.png)
 
 # 👩‍💻 Equipe 
 - [Iza Malafaia](https://github.com/Iza-Malafaia) 
