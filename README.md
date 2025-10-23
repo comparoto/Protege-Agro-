@@ -25,7 +25,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 👾 Issues e bugs tracker
 
-![Issues e bugs tracker](issues.png)
+![Issues e bugs tracker](bugs.png)
   
 # ✅ Quadro - Trello
 
