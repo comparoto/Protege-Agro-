@@ -5,7 +5,11 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # ⚙ Ferramentas 
 - [Trello](https://trello.com/invite/b/68d3017f957b203c71729554/ATTIfd6518690457f8129206f304484740d71D224D60/protege-agro) - Gestão do Projeto
-- [Figma](https://www.figma.com/file/D40oNqrRF186K4n1DSMg0C?node-id=0:1&locale=pt-br&type=design) - Prototipação do Sistema
+- [Figma](https://www.figma.com/design/D40oNqrRF186K4n1DSMg0C/PROTEGE-AGRO---PROTOTIPO-1?node-id=0-1&t=hrwbZLeeoK0QofQZ-1) - Prototipação do Sistema
+
+  # Tela principal - Figma
+
+  ![tela figma](telaprincipal.png)
 
 # 📋 Diagrama de Atividades
 
@@ -13,11 +17,11 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 🎞 Sketches e Storyboards 
 
-- [Sketches e Storyboards](add link do docs)
+- [Sketches e Storyboards](https://docs.google.com/document/d/1Epuxz50EGQDTCdjHtUGG2fdJO8yq-qMKmHMf1PV1Qv0/edit?usp=sharing)
 
 # 📹 Screencast 
 
-add vídeo
+- [Screencast](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
 
 # 👾 Issues e bugs tracker
 
@@ -25,7 +29,7 @@ add vídeo
   
 # ✅ Quadro - Trello
 
-![trello board](quadro.png)
+![trello board](trello-atualizado.png)
 
 # 👩‍💻 Equipe 
 - [Iza Malafaia](https://github.com/Iza-Malafaia) 
