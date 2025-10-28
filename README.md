@@ -17,7 +17,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 🎞 Sketches e Storyboards 
 
-- [Sketches e Storyboards](https://docs.google.com/document/d/1Epuxz50EGQDTCdjHtUGG2fdJO8yq-qMKmHMf1PV1Qv0/edit?usp=sharing)
+- [Sketches e Storyboards](https://docs.google.com/document/d/1Epuxz50EGQDTCdjHtUGG2fdJO8yq-qMKmHMf1PV1Qv0/edit?tab=t.r6pnz4zfpwp9)
 
 # 📹 Screencast 
 
