@@ -37,7 +37,9 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 👾 Issues e bugs tracker
 
-![Issues e bugs tracker](bugs.png)
+![Issues e bugs tracker](issues.png)
+[Issues](https://github.com/comparoto/Protege-Agro-/issues)
+
 
 # 👥 Programação em pares - experiência
 
