@@ -18,34 +18,44 @@ import org.springframework.context.annotation.Profile;
 @Profile("prod")
 public class SecurityConfig {
 
- @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http ) throws Exception {
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-
-                .csrf(AbstractHttpConfigurer::disable )
+                .csrf(AbstractHttpConfigurer::disable)
 
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration configuration = new CorsConfiguration();
-                    configuration.setAllowedOrigins(List.of("https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app" ));
+
+                    // CORREÇÃO 3: Adicione sua URL de produção principal
+                    configuration.setAllowedOrigins(List.of(
+                            "https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app", // Preview (opcional)
+                            "https://protege-agro.vercel.app" // URL de Produção (Principal)
+                    ));
+
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     configuration.setAllowedHeaders(List.of("*"));
+
+                    // CORREÇÃO 2: Permita credenciais
+                    configuration.setAllowCredentials(true);
+
                     return configuration;
                 }))
 
-
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-
 
                 .authorizeHttpRequests(authz -> authz
 
+                        // CORREÇÃO 1: Permita todas as requisições OPTIONS (preflight)
+                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+
+                        // Suas regras antigas
                         .requestMatchers(HttpMethod.POST, "/api/auth/login", "/api/auth/register").permitAll()
                         .requestMatchers("/h2/**").permitAll()
-
                         .anyRequest().authenticated()
                 )
 
                 .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()));
 
-        return http.build( );
+        return http.build();
     }
 }
