@@ -26,7 +26,7 @@ public class SecurityConfig {
 
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration configuration = new CorsConfiguration();
-                    configuration.setAllowedOrigins(List.of("http://localhost:4200" ));
+                    configuration.setAllowedOrigins(List.of("https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app" ));
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     configuration.setAllowedHeaders(List.of("*"));
                     return configuration;
