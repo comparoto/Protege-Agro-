@@ -15,7 +15,7 @@ import { AuthService } from '../auth.service';
 })
 export class CadastroComponent {
   cadastroForm: FormGroup;
-  apiUrl = 'http://localhost:8080/api/auth/register'; 
+  apiUrl = 'protege-agro-i5ep6eray-juliana-comparotos-projects.vercel.app'; 
 
   
   visibilidadeSenhas = {
