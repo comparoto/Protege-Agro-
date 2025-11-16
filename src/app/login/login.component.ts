@@ -14,7 +14,7 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent {
   loginForm: FormGroup;
-  apiUrl = 'http://localhost:8080/api/auth/login';
+  apiUrl = 'protege-agro-i5ep6eray-juliana-comparotos-projects.vercel.app';
   erroApi: string = '';
   senhaVisivel: boolean = false;
 
