@@ -1,0 +1,50 @@
+<div class="page-title">
+  <h1>Acompanhamento de Eficácia</h1>
+</div>
+
+<div class="page-actions-bar">
+  <div class="filter-group-container">
+    <div class="filter-group">
+      <label for="propriedade-select">Propriedade</label>
+      <select id="propriedade-select" class="form-select">
+        <option value="todas">Todas</option>
+        <option value="prop1">Propriedade 1</option>
+        <option value="prop2">Propriedade 2</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="periodo-select">Período</label>
+      <select id="periodo-select" class="form-select">
+        <option value="mensal">Mensal</option>
+        <option value="semestral">Semestral</option>
+        <option value="anual">Anual</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="actions-group">
+    <button class="btn btn-upload" (click)="onFazerUpload()">Fazer upload</button>
+    <button class="btn btn-report-dark" (click)="onGerarRelatorio()">Gerar relatório</button>
+  </div>
+</div>
+
+<div class="content-grid-acompanhamento">
+  
+  <div class="chart-card">
+    <h3>Rendimento por mês</h3>
+    <div class="chart-container">
+  
+      <img src="https://i0.wp.com/www.biosistemico.org.br/wp-content/uploads/2024/04/grafico-BioSistemico_org_br-d83XN.jpg?resize=1140%2C642&ssl=1" alt="Placeholder Gráfico de Linha">
+    </div>
+  </div>
+
+  <div class="analysis-card">
+    <h3>Análise Inteligente</h3>
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div>
+</div>

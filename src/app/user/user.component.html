@@ -1,0 +1,56 @@
+<div class="welcome-section">
+  <div class="welcome-text">
+    <h1>Olá, {{ userName }}</h1>
+    <p>Bem-vindo ao painel de controle</p>
+  </div>
+  <div class="report-action">
+    <button class="btn btn-primary" (click)="onGerarRelatorio()">
+      Gerar Relatório
+    </button>
+  </div>
+</div>
+
+<div class="cards-grid">
+  <div class="card">
+    <div class="card-header">
+      <h3>Cultivo</h3>
+    </div>
+    <div class="card-content">
+      <div class="empty-state">
+        <p>Ainda não há um cultivo registrado</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary">Inserir cultivo</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Propriedades</h3>
+    </div>
+    <div class="card-content">
+      <div class="empty-state">
+        <p>Ainda não há propriedades registradas</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary">Inserir propriedade</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Galeria</h3>
+    </div>
+    <div class="card-content">
+      <div class="empty-state">
+        <p>Ainda não há registros incluídos</p>
+      </div>
+      <div class="card-actions">
+    
+        <a routerLink="galeria" class="btn btn-primary">Acessar galeria</a>
+      </div>
+    </div>
+  </div>
+</div>

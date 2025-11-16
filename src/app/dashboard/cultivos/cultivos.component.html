@@ -1,0 +1,113 @@
+<div class="page-title">
+  <h1>Indicadores de Vulnerabilidade por Cultivos</h1>
+</div>
+
+<div class="page-actions-bar">
+  <div class="filter-group">
+    <label for="cultivos-select">Cultivos</label>
+    <select id="cultivos-select" class="form-select">
+      <option value="todas">Todas</option>
+      <option value="milho">Milho</option>
+      <option value="soja">Soja</option>
+      <option value="algodao">Algodão</option>
+    </select>
+  </div>
+  <div class="actions-group">
+
+    <button class="btn btn-upload" (click)="onFazerUpload()">Fazer upload</button>
+    <button class="btn btn-report-dark" (click)="onGerarRelatorio()">Gerar relatório</button>
+  </div>
+</div>
+
+<div class="mini-cards-grid">
+  <div class="mini-card">
+    <div class="mini-card-header">
+      <h4>Risco de Erosão</h4>
+    </div>
+    <div class="mini-card-content">
+      <span class="risk-level medium">Médio</span>
+    </div>
+  </div>
+  <div class="mini-card">
+    <div class="mini-card-header">
+      <h4>Risco de Invasão (espécies)</h4>
+    </div>
+    <div class="mini-card-content">
+      <span class="risk-level low">Baixo</span>
+    </div>
+  </div>
+  <div class="mini-card">
+    <div class="mini-card-header">
+      <h4>Risco de Salinização</h4>
+    </div>
+    <div class="mini-card-content">
+      <span class="risk-level low">Baixo</span>
+    </div>
+  </div>
+  <div class="mini-card">
+    <div class="mini-card-header">
+      <h4>Risco de Pragas</h4>
+    </div>
+    <div class="mini-card-content">
+      <span class="risk-level critical">Crítico</span>
+    </div>
+  </div>
+  <div class="mini-card">
+    <div class="mini-card-header">
+      <h4>Perda de biodiversidade</h4>
+    </div>
+    <div class="mini-card-content">
+      <span class="risk-level critical">Crítico</span>
+    </div>
+  </div>
+</div>
+
+<div class="cards-grid">
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Projeção Climática</h3>
+    </div>
+    <div class="card-content chart-container">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfyaGNlfVhDzo8p1BUtui5OX-zv9_7UQrH41hNbDO3EpGOhg9tnywTMgir0FKRO0mjzvF5TICnhc2hLAz2U5DJtMejAK5lYE7qWVTxdCnp94gjXiaLFHHOjBlV1u0c1Ci1ktT2g4eehCg/s1600/Climograma.JPG" alt="Placeholder Gráfico de Linhas">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Termômetro de Risco</h3>
+    </div>
+    <div class="card-content chart-container map-legend-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0JXJXXuyhvPKKoZf0ktZbGQ0Uu7e9bAN6nVKKxQq2Is5PYFSyQks1OWFys1HqnCqymo0&usqp=CAU" alt="Placeholder Gráfico de Mapa">
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Emissão de gases</h3>
+    </div>
+    <div class="card-content chart-container">
+      <img src="https://media.brainly.com.br/image/rs:fill/w:1080/q:75/plain/https://pt-static.z-dn.net/files/d97/8ba9f00d466b07cd5f0affbd7a12c5f4.jpg" alt="Placeholder Gráfico de Radar">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Riscos por Cultivo</h3>
+    </div>
+    <div class="card-content chart-container">
+      <img src="https://www.gov.br/agricultura/pt-br/assuntos/noticias/producao-de-graos-brasileira-devera-chegar-a-390-milhoes-de-toneladas-nos-proximos-dez-anos/GROS.png" alt="Placeholder Gráfico de Barras Empilhadas">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Degradação do solo</h3>
+    </div>
+    <div class="card-content chart-container">
+      <img src="https" alt="Placeholder Gráfico de Área">
+    </div>
+  </div>
+
+</div>

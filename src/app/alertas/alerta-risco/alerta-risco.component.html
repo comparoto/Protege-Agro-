@@ -1,0 +1,80 @@
+<div class="page-title">
+  <h1>Alertas por risco</h1>
+</div>
+
+
+<div class="page-actions-bar">
+  <div class="filter-group">
+    <label for="risco-select">Risco</label>
+    <select id="risco-select" class="form-select">
+      <option value="hidrico">Hídrico</option>
+      <option value="pragas">Pragas</option>
+      <option value="geada">Geada</option>
+    </select>
+  </div>
+  <div class="actions-group">
+    <button class="btn btn-report-dark" (click)="onGerarRelatorio()">Gerar relatório</button>
+    <button class="btn btn-dispense-alert" (click)="onDispensarAlerta()">Dispensar alerta</button>
+  </div>
+</div>
+
+
+<div class="section-title">
+
+  <h2>Risco de Estresse Hídrico</h2>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <span class="kpi-label">Risco atual</span>
+    <span class="kpi-value high">Alto</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-label">Temperatura</span>
+    <span class="kpi-value">23°C</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-label">Dias sem chuva</span>
+    <span class="kpi-value">15 dias</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-label">Previsão de chuva</span>
+    <span class="kpi-value">5-7 Dias</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-label">Chuva Esperada</span>
+    <span class="kpi-value">45mm</span>
+  </div>
+  <div class="kpi-card">
+    <span class="kpi-label">Risco de Tempestade</span>
+    <span class="kpi-value critical">Crítico</span>
+  </div>
+</div>
+
+<div class="content-grid-risco">
+
+  <div class="chart-card large-chart">
+    <h3>Balanço Hídrico</h3>
+    <div class="chart-container">
+      <img src="https://www.researchgate.net/publication/308389244/figure/fig2/AS:408753707995144@1474465886708/Figura-2-Grafico-do-balanco-hidrico-para-Chapadinha-MA-Metodo-de-Thornthwaite-e-Mather.png" alt="Gráfico Balanço Hídrico">
+    </div>
+  </div>
+
+  <div class="chart-card gauge-chart">
+    <h3>Umidade do Solo</h3>
+    <div class="chart-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZLIVBoOmZYBjKV4skduwcF5ezA7aamkeHA&s" alt="Gráfico Umidade do Solo">
+    </div>
+    <div class="gauge-legend">
+      <div class="legend-item"><span class="color-box red"></span> Alta</div>
+      <div class="legend-item"><span class="color-box yellow"></span> Baixa</div>
+      <div class="legend-item"><span class="color-box green"></span> Ideal</div>
+    </div>
+  </div>
+
+  <div class="analysis-card">
+    <h3>Análise</h3>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  </div>
+
+</div>
