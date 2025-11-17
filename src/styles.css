@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a3c27;
+  line-height: 1.5;
+  min-height: 100vh;
+  padding-top: 70px; 
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbdbdb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; 
+  z-index: 1001; 
+  padding: 0 40px; 
+  margin-bottom: 0; 
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a3c27;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.poster {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.poster-content {
+  max-width: 600px;
+}
+
+.poster-content img {
+  display: none;
+}
+
+.poster-image {
+  text-align: center;
+}
+
+.poster-image img {
+  margin-right: 40px;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.poster h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #1a3c27;
+}
+
+.poster h1 br {
+  display: block;
+  margin: 5px 0;
+}
+
+.poster p {
+  font-size: 20px;
+  color: #5a7a5a;
+  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 18px 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  min-width: 180px;
+  cursor: pointer;
+}
+
+.button.cadastro {
+  background-color: #2d5a2d;
+  color: white;
+}
+
+.button.cadastro:hover {
+  background-color: #1e3e1e;
+}
+
+.button.login {
+  background-color: transparent;
+  color: #2d5a2d;
+  border: 2px solid #2d5a2d;
+}
+
+.button.login:hover {
+  background-color: #2d5a2d;
+  color: white;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.about-cards {
+  background-color: #f8f8f8;
+  padding: 40px 35px;
+  border-radius: 8px;
+  border-left: 4px solid #2d5a2d;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.about-cards:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.about-cards h3 {
+  font-size: 20px;
+  color: #2d5a2d;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-cards p {
+  color: #5a7a5a;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 20px 25px;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  color: #1a4721;
+  font-weight: 600;
+  margin: 0; 
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+  height: 44px;
+}
+
+.btn-primary {
+  background: #2d5a2d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1a4721;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  background-color: #1e3e1e10;
+}
+
+footer p {
+  color: #5a7a5a;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .poster {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .poster-content {
+    max-width: 100%;
+  }
+
+  .poster h1 {
+    font-size: 36px;
+  }
+
+  .poster p {
+    font-size: 18px;
+  }
+
+  .poster-image img {
+    margin-right: 0;
+    max-width: 300px;
+  }
+
+  .about {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .button {
+    min-width: 160px;
+    padding: 15px 30px;
+  }
+}

@@ -216,7 +216,7 @@
 @media (max-width: 768px) {
   .content-grid-risco,
   .kpi-grid {
-    grid-template-columns: 1fr; /
+    grid-template-columns: 1fr; 
   }
   .page-actions-bar {
     flex-direction: column;
