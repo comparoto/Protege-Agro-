@@ -30,7 +30,9 @@ public class SecurityConfig {
                     configuration.setAllowedOrigins(List.of(
                             "https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app",
                             "https://protege-agro.vercel.app",
+                            "https://protege-agro-nwzb2eqmd-juliana-comparotos-projects.vercel.app",
                             "https://protege-agro-nwzb2eqmd-juliana-comparotos-projects.vercel.app"
+
                     ));
 
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
