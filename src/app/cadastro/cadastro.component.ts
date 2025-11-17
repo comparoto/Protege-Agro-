@@ -69,7 +69,7 @@ export class CadastroComponent {
       return;
     }
     
-    const urlCadastro = `${this.apiUrl}/api/auth/register`;
+    const urlCadastro = `${this.apiUrl}/api/auth/register/`;
 
     this.http.post(urlCadastro, this.cadastroForm.value).subscribe({
       next: (resposta) => {

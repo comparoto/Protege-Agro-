@@ -47,7 +47,7 @@ export class LoginComponent {
       return; 
     }
 
-    const urlLogin = `${this.apiUrl}/api/auth/login`;
+    const urlLogin = `${this.apiUrl}/api/auth/login/`;
 
     this.http.post<any>(urlLogin, this.loginForm.value) 
       .subscribe({
