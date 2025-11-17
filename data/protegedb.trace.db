@@ -1,0 +1,4 @@
+2025-11-07 00:29:33.352884-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM USUARIO USUAR\000d\000a[*]IO USUARIO USUARIO"; SQL statement:
+SELECT * FROM USUARIO USUAR
+IO USUARIO USUARIO [42000-232]
