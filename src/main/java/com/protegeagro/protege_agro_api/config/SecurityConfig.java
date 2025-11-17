@@ -26,10 +26,11 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration configuration = new CorsConfiguration();
 
-                    // CORREÇÃO 3: Adicione sua URL de produção principal
+
                     configuration.setAllowedOrigins(List.of(
-                            "https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app", // Preview (opcional)
-                            "https://protege-agro.vercel.app" // URL de Produção (Principal)
+                            "https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app",
+                            "https://protege-agro.vercel.app",
+                            "https://protege-agro-nwzb2eqmd-juliana-comparotos-projects.vercel.app"
                     ));
 
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
@@ -45,10 +46,9 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authz -> authz
 
-                        // CORREÇÃO 1: Permita todas as requisições OPTIONS (preflight)
+
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
-                        // Suas regras antigas
                         .requestMatchers(HttpMethod.POST, "/api/auth/login", "/api/auth/register").permitAll()
                         .requestMatchers("/h2/**").permitAll()
                         .anyRequest().authenticated()
