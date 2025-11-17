@@ -1,3 +1,4 @@
+/* Garante que o componente ocupe o espaço corretamente */
 :host {
   display: block;
   width: 100%;
@@ -197,7 +198,7 @@
 .color-box.yellow { background-color: #FFC107; }
 .color-box.green { background-color: #4CAF50; }
 
-
+/* Responsividade */
 @media (max-width: 1200px) {
   .content-grid-risco {
     grid-template-columns: 1fr;

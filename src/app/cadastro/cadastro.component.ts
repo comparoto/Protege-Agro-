@@ -3,6 +3,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http'; 
+
 import { AuthService } from '../auth.service'; 
 
 @Component({
@@ -14,8 +15,7 @@ import { AuthService } from '../auth.service';
 })
 export class CadastroComponent {
   cadastroForm: FormGroup;
- 
-  apiUrl = 'https://protege-agro-api.vercel.app/'; 
+  apiUrl = 'http://localhost:8080/api/auth/register'; 
 
   
   visibilidadeSenhas = {
@@ -69,9 +69,7 @@ export class CadastroComponent {
       return;
     }
     
-    const urlCadastro = `${this.apiUrl}/api/auth/register/`;
-
-    this.http.post(urlCadastro, this.cadastroForm.value).subscribe({
+    this.http.post(this.apiUrl, this.cadastroForm.value).subscribe({
       next: (resposta) => {
         console.log('Resposta da API:', resposta);
 
@@ -80,16 +78,15 @@ export class CadastroComponent {
           this.authService.salvarNomeUsuario(nomeUsuario);
         }
         
+
         console.log('Cadastro realizado com sucesso!');
         alert('Cadastro realizado com sucesso!');
         this.router.navigate(['/login']);
       },
       error: (erro) => {
         console.error('Erro no cadastro:', erro);
-        
-        const msg = erro.error?.message || 'Erro ao tentar cadastrar.';
+        const msg = erro.error.message || 'Erro ao tentar cadastrar.';
         console.error(msg); 
-
       }
     });
   }
