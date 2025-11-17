@@ -28,17 +28,13 @@ public class SecurityConfig {
 
 
                     configuration.setAllowedOrigins(List.of(
-                            "https://protege-agro-97di57t1p-juliana-comparotos-projects.vercel.app",
                             "https://protege-agro.vercel.app",
-                            "https://protege-agro-nwzb2eqmd-juliana-comparotos-projects.vercel.app",
                             "https://protege-agro-nwzb2eqmd-juliana-comparotos-projects.vercel.app"
 
                     ));
 
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     configuration.setAllowedHeaders(List.of("*"));
-
-
                     configuration.setAllowCredentials(true);
 
                     return configuration;
@@ -48,11 +44,9 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authz -> authz
 
-
-                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-
-                        .requestMatchers(HttpMethod.POST, "/api/auth/login", "/api/auth/register").permitAll()
-                        .requestMatchers("/h2/**").permitAll()
+                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // Permite preflight
+                        .requestMatchers(HttpMethod.POST, "/api/auth/login", "/api/auth/register").permitAll() // Libera login/registro
+                        .requestMatchers("/h2/**").permitAll() // (Não afeta prod, mas tudo bem)
                         .anyRequest().authenticated()
                 )
 
