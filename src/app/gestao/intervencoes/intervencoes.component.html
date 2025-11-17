@@ -1,0 +1,81 @@
+<div class="page-title">
+  <h1>Intervenções</h1>
+</div>
+
+<div class="page-actions-bar">
+  <div class="filter-group-container">
+    <div class="filter-group">
+      <label for="propriedade-select">Propriedade</label>
+      <select id="propriedade-select" class="form-select">
+        <option value="todas">Todas</option>
+        <option value="prop1">Propriedade 1</option>
+        <option value="prop2">Propriedade 2</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="periodo-select">Período</label>
+      <select id="periodo-select" class="form-select">
+        <option value="mensal">Mensal</option>
+        <option value="semestral">Semestral</option>
+        <option value="anual">Anual</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="actions-group">
+    <button class="btn btn-upload" (click)="onFazerUpload()">Fazer upload</button>
+    <button class="btn btn-report-dark" (click)="onGerarRelatorio()">Gerar relatório</button>
+  </div>
+</div>
+
+<div class="content-grid-intervencoes">
+  
+  <div class="card-intervencao">
+    <h3>Adicionar Intervenção</h3>
+    
+    <ul class="lista-adicionar">
+      <li>
+        <span class="bullet-square"></span>
+        <span>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+      </li>
+      <li>
+        <span class="bullet-square"></span>
+        <span>ex ea commodo consequat.</span>
+      </li>
+      <li>
+        <span class="bullet-checkbox"></span>
+        <span>Duis aute irure dolor in reprehenderit in voluptate</span>
+      </li>
+      <li>
+        <span class="bullet-checkbox"></span>
+        <span>esse cillum dolore eu fugiat nulla pariatur.</span>
+      </li>
+      <li>
+        <span class="bullet-square"></span>
+        <span>Excepteur sint occaecat cupidatat non proident</span>
+      </li>
+      <li>
+        <span class="bullet-checkbox"></span>
+        <span>anim id est laborum.</span>
+      </li>
+    </ul>
+
+    <button class="btn btn-add">Adicionar</button>
+  </div>
+
+  <div class="card-intervencao">
+    <h3>Histórico de Intervenções</h3>
+    
+    <ul class="lista-historico">
+      <li>Lorem ipsum dolor sit amet,</li>
+      <li>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+      <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
+      <li>esse cillum dolore eu fugiat nulla pariatur.</li>
+      <li>Excepteur sint occaecat cupidatat non</li>
+      <li>proident, sunt in culpa qui officia deserunt mollit</li>
+      <li>anim id est laborum.</li>
+    </ul>
+  </div>
+
+</div>

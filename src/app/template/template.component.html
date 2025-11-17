@@ -1,0 +1,99 @@
+<div class="app-container">
+  
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item has-submenu" [class.submenu-open]="isDashboardOpen">
+          <a href="#" class="nav-link" (click)="toggleDashboardSubmenu($event)">
+            <span>Dashboard</span>
+            <span class="submenu-arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/propriedades']" class="nav-link">
+                <span>Análise por Propriedade</span>
+              </a>
+            </li>
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/cultivos']" class="nav-link">
+                <span>Análise por Cultivo</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+  
+        <li class="nav-item has-submenu" [class.submenu-open]="isGestaoOpen">
+          <a href="#" class="nav-link" (click)="toggleGestaoSubmenu($event)">
+            <span>Gestão</span>
+            <span class="submenu-arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/praticas']" class="nav-link">
+                <span>Práticas Resilientes</span> 
+              </a>
+            </li>
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/intervencoes']" class="nav-link">
+                <span>Intervenções</span> 
+              </a>
+            </li>
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/acompanhamento']" class="nav-link">
+                <span>Acompanhamento de Eficácia</span> 
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-submenu" [class.submenu-open]="isAlertaOpen">
+          <a href="#" class="nav-link" (click)="toggleAlertaSubmenu($event)">
+            <span>Alertas</span>
+            <span class="submenu-arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/sms']" class="nav-link">
+                <span>Últimos SMS</span>
+              </a>
+            </li>
+            <li class="nav-item submenu-item" routerLinkActive="active">
+              <a [routerLink]="['/layout/alerta-risco']" class="nav-link">
+                <span>Alertas por Risco</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item-user" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }"> 
+          <a routerLink="/layout" class="nav-link">
+            <div class="user-avatar">👤</div>
+            <span>{{ userName }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    
+    <header class="content-header">
+      <div class="content-header-logo">
+        <img src="/protege-agro-png.png" height="50" width="50" alt="Protege Agro Logo">
+        <span class="logo-text">Protege Agro</span>
+      </div>
+      <div class="user-info">
+        <div class="user-avatar">👤</div>
+        <span>{{ userName }}</span>
+      </div>
+    </header>
+
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+
+  </main>
+</div>
