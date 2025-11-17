@@ -38,7 +38,7 @@ public class SecurityConfig {
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     configuration.setAllowedHeaders(List.of("*"));
 
-                    // CORREÇÃO 2: Permita credenciais
+
                     configuration.setAllowCredentials(true);
 
                     return configuration;
