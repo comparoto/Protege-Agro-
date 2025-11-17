@@ -15,7 +15,7 @@ import { AuthService } from '../auth.service';
 export class CadastroComponent {
   cadastroForm: FormGroup;
  
-  apiUrl = 'https://protege-agro-2rk6ets50-juliana-comparotos-projects.vercel.app'; 
+  apiUrl = 'https://protege-agro-git-springboot-juliana-comparotos-projects.vercel.app'; 
 
   
   visibilidadeSenhas = {
