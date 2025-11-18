@@ -12,38 +12,37 @@ import org.springframework.web.cors.CorsConfiguration;
 
 import java.util.List;
 import org.springframework.context.annotation.Profile;
-
 @Configuration
 @EnableWebSecurity
 @Profile("prod")
 public class SecurityConfig {
 
- @Bean
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http ) throws Exception {
         http
-
                 .csrf(AbstractHttpConfigurer::disable )
-
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration configuration = new CorsConfiguration();
-                    configuration.setAllowedOrigins(List.of("http://localhost:4200" ));
+
+                    configuration.setAllowedOrigins(List.of(
+                            "https://protege-agro-front.onrender.com",
+                            "http://localhost:4200"
+                    ));
+
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     configuration.setAllowedHeaders(List.of("*"));
+                    configuration.setAllowCredentials(true);
                     return configuration;
                 }))
 
-
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
-
                 .authorizeHttpRequests(authz -> authz
-
                         .requestMatchers(HttpMethod.POST, "/api/auth/login", "/api/auth/register").permitAll()
+                        .requestMatchers("/error").permitAll()
                         .requestMatchers("/h2/**").permitAll()
-
                         .anyRequest().authenticated()
                 )
-
                 .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.sameOrigin()));
 
         return http.build( );
