@@ -38,7 +38,6 @@ public class AutenticacaoService {
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado."));
     }
 
-
     public Usuario registrar(CadastroRequestDTO request) {
 
         if (!isTelefoneValido(request.getTelefone())) {
@@ -56,9 +55,8 @@ public class AutenticacaoService {
         String senhaCriptografada = passwordEncoder.encode(request.getSenha());
 
         Usuario novoUsuario = new Usuario();
-        -
-        novoUsuario.setNome(request.getNome());
 
+        novoUsuario.setNome(request.getNome());
 
         novoUsuario.setEmail(request.getEmail());
         novoUsuario.setSenha(senhaCriptografada);
@@ -69,7 +67,6 @@ public class AutenticacaoService {
 
         return usuarioRepository.save(novoUsuario);
     }
-
 
     private boolean isTelefoneValido(String telefone) {
         String digitos = telefone.replaceAll("[^0-9]", "");
