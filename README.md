@@ -26,15 +26,15 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
   
 # Tela inicial 
 
-  ![tela figma](telaprincipal.png)
+  ![tela inicial](telainicial.png)
   
 # Tela principal funcionalidade
 
-  ![tela figma](telaprincipal.png)
+  ![tela principal](telaprincipal.png)
 
 # ✅ Tela do quadro Kanban
 
-![trello board](trello-atualizado.png)
+![trello board](kanban.png)
 
 # 📋 Diagrama de Atividades
 
