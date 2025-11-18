@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http'; 
 
 import { AuthService } from '../auth.service'; 
 
@@ -15,19 +14,15 @@ import { AuthService } from '../auth.service';
 })
 export class CadastroComponent {
   cadastroForm: FormGroup;
-  apiUrl = 'http://localhost:8080/api/auth/register'; 
-
   
   visibilidadeSenhas = {
     senha: false,
     confirmarSenha: false
   };
 
-
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private http: HttpClient,
     private authService: AuthService 
   ) {
     this.cadastroForm = this.fb.group({
@@ -56,7 +51,6 @@ export class CadastroComponent {
     this.visibilidadeSenhas[campo] = !this.visibilidadeSenhas[campo];
   }
 
-
   senhasCoincidem(form: FormGroup) {
     const senha = form.get('senha')?.value;
     const confirmarSenha = form.get('confirmarSenha')?.value;
@@ -68,25 +62,27 @@ export class CadastroComponent {
       this.cadastroForm.markAllAsTouched();
       return;
     }
-    
-    this.http.post(this.apiUrl, this.cadastroForm.value).subscribe({
+   
+    this.authService.registrar(this.cadastroForm.value).subscribe({
       next: (resposta) => {
         console.log('Resposta da API:', resposta);
 
         const nomeUsuario = this.cadastroForm.get('nome')?.value;
         if (nomeUsuario) {
-          this.authService.salvarNomeUsuario(nomeUsuario);
+           
+           this.authService.salvarNomeUsuario(nomeUsuario);
         }
         
-
         console.log('Cadastro realizado com sucesso!');
         alert('Cadastro realizado com sucesso!');
         this.router.navigate(['/login']);
       },
       error: (erro) => {
         console.error('Erro no cadastro:', erro);
-        const msg = erro.error.message || 'Erro ao tentar cadastrar.';
+   
+        const msg = erro.error?.message || 'Erro ao tentar cadastrar. Tente novamente.';
         console.error(msg); 
+        alert(msg); 
       }
     });
   }
