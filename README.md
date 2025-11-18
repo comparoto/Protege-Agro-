@@ -21,13 +21,18 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 📹 Demonstração do projeto
 
-- [Screencast](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
+- [ 📽️ Demonstração do projeto implementado em telas ](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
+- [ 💻 DEPLOY](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
   
-# Tela principal 
+# Tela inicial 
+
+  ![tela figma](telaprincipal.png)
+  
+# Tela principal funcionalidade
 
   ![tela figma](telaprincipal.png)
 
-# ✅ Quadro - Trello
+# ✅ Tela do quadro Kanban
 
 ![trello board](trello-atualizado.png)
 
@@ -40,6 +45,19 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 ![Issues e bugs tracker](issues.png)
 [Issues](https://github.com/comparoto/Protege-Agro-/issues)
 
+# 🔔 Status do projeto
+
+✅ Definição do problema e solução
+
+✅ Criação das histórias de usuário
+
+✅ Prototipação no FIGMA
+
+✅ Desenvolvimento do código
+
+✅ Testes de confirmação
+
+✅ Deploy
 
 # 👥 Programação em pares - experiência
 
