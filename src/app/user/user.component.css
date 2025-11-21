@@ -29,10 +29,11 @@
 }
 
 .empty-state {
-  text-align: center;
+  text-align: right;
   padding: 20px 0;
-  color: #6c757d;
-  font-style: italic;
+  color: #262729;
+  font-weight: bold;
+  
 }
 
 .empty-state p {
