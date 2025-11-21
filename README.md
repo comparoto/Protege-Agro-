@@ -22,19 +22,19 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 # 📹 Demonstração do projeto
 
 - [ 📽️ Demonstração do projeto implementado em telas ](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
-- [ 💻 DEPLOY](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
+- [ 💻 DEPLOY](https://protege-agro-front.onrender.com)
   
 # Tela inicial 
 
-  ![tela figma](telaprincipal.png)
+  ![tela inicial](telainicial.png)
   
 # Tela principal funcionalidade
 
-  ![tela figma](telaprincipal.png)
+  ![tela principal](telaprincipal.png)
 
 # ✅ Tela do quadro Kanban
 
-![trello board](trello-atualizado.png)
+![trello board](kanban.png)
 
 # 📋 Diagrama de Atividades
 
