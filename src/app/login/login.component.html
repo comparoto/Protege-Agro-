@@ -5,26 +5,32 @@
 
     <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-        <div *ngIf="erroApi" class="api-error-message">
-            {{ erroApi }}
-        </div>
+        @if (erroApi) {
+            <div class="api-error-message">
+                {{ erroApi }}
+            </div>
+        }
 
         <div class="form-group">
             <label>Insira seu email</label>
             <input type="email" placeholder="seu@email.com" formControlName="email"
                    [ngClass]="{ 'is-invalid': f['email'].invalid && f['email'].touched }">
             
-            <div *ngIf="f['email'].invalid && f['email'].touched" class="error-message">
-                <div *ngIf="f['email'].errors?.['required']">Email é obrigatório.</div>
-                <div *ngIf="f['email'].errors?.['email']">Formato de email inválido.</div>
-            </div>
+            @if (f['email'].invalid && f['email'].touched) {
+                <div class="error-message">
+                    @if (f['email'].errors?.['required']) {
+                        <div>Email é obrigatório.</div>
+                    }
+                    @if (f['email'].errors?.['email']) {
+                        <div>Formato de email inválido.</div>
+                    }
+                </div>
+            }
         </div>
-
 
         <div class="form-group">
             <label>Insira sua senha</label>
             
-         
             <div class="input-toggle-wrapper">
                 <input 
                     [type]="senhaVisivel ? 'text' : 'password'" 
@@ -32,15 +38,18 @@
                     formControlName="senha"
                     [ngClass]="{ 'is-invalid': f['senha'].invalid && f['senha'].touched }">
                 
-               
                 <button type="button" (click)="toggleVisibilidade()" class="toggle-senha-btn">
                     {{ senhaVisivel ? 'Esconder' : 'Mostrar' }}
                 </button>
             </div>
             
-            <div *ngIf="f['senha'].invalid && f['senha'].touched" class="error-message">
-                <div *ngIf="f['senha'].errors?.['required']">Senha é obrigatória.</div>
-            </div>
+            @if (f['senha'].invalid && f['senha'].touched) {
+                <div class="error-message">
+                    @if (f['senha'].errors?.['required']) {
+                        <div>Senha é obrigatória.</div>
+                    }
+                </div>
+            }
         </div>
 
         <button type="submit" class="button-login" [disabled]="loginForm.invalid">
