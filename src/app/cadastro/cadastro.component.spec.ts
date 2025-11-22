@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CadastroComponent } from './cadastro.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+
 
 describe('CadastroComponent', () => {
   let component: CadastroComponent;
@@ -14,8 +13,7 @@ describe('CadastroComponent', () => {
       imports: [
         CadastroComponent,
         ReactiveFormsModule, 
-        HttpClientTestingModule, 
-        RouterTestingModule 
+     
       ]
     })
     .compileComponents();
