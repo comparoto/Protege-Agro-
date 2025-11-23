@@ -14,7 +14,6 @@ import java.util.List;
 import org.springframework.context.annotation.Profile;
 @Configuration
 @EnableWebSecurity
-@Profile("prod")
 public class SecurityConfig {
 
     @Bean
@@ -25,8 +24,8 @@ public class SecurityConfig {
                     CorsConfiguration configuration = new CorsConfiguration();
 
                     configuration.setAllowedOrigins(List.of(
-                            "https://protege-agro-front.onrender.com",
-                            "http://localhost:4200"
+                            "https://protege-agro-front.onrender.com"
+
                     ));
 
                     configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
