@@ -12,7 +12,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
 
 import java.util.List;
-import org.springframework.context.annotation.Profile;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
