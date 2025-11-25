@@ -30,7 +30,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
   
 # Tela principal funcionalidade
 
-  ![tela principal](telaprincipal.png)
+  ![tela principal](tela-principal.png)
 
 # ✅ Tela do quadro Kanban
 
@@ -42,7 +42,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 👾 Issues e bugs tracker
 
-![Issues e bugs tracker](issues.png)
+![Issues e bugs tracker](issues-bugs.png)
 [Issues](https://github.com/comparoto/Protege-Agro-/issues)
 
 # 🔔 Status do projeto
@@ -63,7 +63,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 - Iza e Maria Luiza - "Estávamos enfrentando alguns problemas no Front-End, principalmente na parte inicial da aplicação. A programação em pares fez com que essas dificuldades fossem facilmente superadas com a revisão de código simultaneamente e testes realizados com mais frequência."
   
-- Juliana e Joanna - "Começamos a utilizar a programação em pares assim que iniciamos os códigos.Como ficamos majoritariamente com a parte do Spring Boot, essa abordagem foi essencial para a correção de erros das APIs e para a realização de testes eficientes." 
+- Juliana e Joanna - "Começamos a utilizar a programação em pares assim que iniciamos os códigos.Como ficamos majoritariamente com a parte do Spring Boot, essa abordagem foi essencial para a correção de erros da API e para a realização de testes eficientes." 
 
 
 # 👩‍💻 Equipe 
