@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -28,10 +28,13 @@ export class CadastroComponent {
     this.cadastroForm = this.fb.group({
       nome: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
+      
+      
       telefone: ['', [
         Validators.required, 
-        Validators.pattern('^[0-9]{10,11}$')
+        this.validarTelefone 
       ]],
+
       senha: ['', [
         Validators.required,
         Validators.pattern('^(?=.*[0-9])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};\':"\\\\|,.<>\\/?]).{6,}$')
@@ -45,6 +48,21 @@ export class CadastroComponent {
 
   get f() {
     return this.cadastroForm.controls;
+  }
+
+  validarTelefone(control: AbstractControl): ValidationErrors | null {
+    const valor = control.value;
+
+    if (!valor) {
+      return null; 
+    }
+
+    const apenasNumeros = valor.replace(/\D/g, '');
+
+
+    const isValido = apenasNumeros.length >= 10 && apenasNumeros.length <= 11;
+
+    return isValido ? null : { telefoneInvalido: true };
   }
 
   toggleVisibilidade(campo: 'senha' | 'confirmarSenha'): void {
@@ -69,7 +87,6 @@ export class CadastroComponent {
 
         const nomeUsuario = this.cadastroForm.get('nome')?.value;
         if (nomeUsuario) {
-           
            this.authService.salvarNomeUsuario(nomeUsuario);
         }
         

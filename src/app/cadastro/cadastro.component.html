@@ -49,7 +49,7 @@
                     @if (f['telefone'].errors?.['required']) {
                         <div>Telefone é obrigatório.</div>
                     }
-                    @if (f['telefone'].errors?.['pattern']) {
+                    @if (f['telefone'].errors?.['telefoneInvalido']) {
                         <div>Telefone inválido (deve ter 10 ou 11 dígitos).</div>
                     }
                 </div>
