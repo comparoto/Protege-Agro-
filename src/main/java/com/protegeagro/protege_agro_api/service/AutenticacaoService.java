@@ -16,7 +16,7 @@ public class AutenticacaoService {
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
 
-    private static final String SENHA_REGEX = "^(?=.*[0-9])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{6,}$";
+    private static final String SENHA_REGEX = "^(?=.*[0-9])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?]).{6,}$";
     private static final Pattern SENHA_PATTERN = Pattern.compile(SENHA_REGEX);
 
     public AutenticacaoService(UsuarioRepository usuarioRepository, PasswordEncoder passwordEncoder) {
@@ -40,7 +40,9 @@ public class AutenticacaoService {
 
     public Usuario registrar(CadastroRequestDTO request) {
 
-        if (!isTelefoneValido(request.getTelefone())) {
+        String telefoneLimpo = request.getTelefone() != null ? request.getTelefone().replaceAll("[^0-9]", "") : "";
+
+        if (!isTelefoneValido(telefoneLimpo)) {
             throw new RuntimeException("Número de telefone inválido. Deve conter 10 ou 11 dígitos.");
         }
 
@@ -57,10 +59,9 @@ public class AutenticacaoService {
         Usuario novoUsuario = new Usuario();
 
         novoUsuario.setNome(request.getNome());
-
         novoUsuario.setEmail(request.getEmail());
         novoUsuario.setSenha(senhaCriptografada);
-        novoUsuario.setTelefone(request.getTelefone());
+        novoUsuario.setTelefone(telefoneLimpo);
         novoUsuario.setEstado(request.getEstado());
         novoUsuario.setRegiao(request.getRegiao());
         novoUsuario.setCultivo(request.getCultivo());
@@ -68,9 +69,9 @@ public class AutenticacaoService {
         return usuarioRepository.save(novoUsuario);
     }
 
-    private boolean isTelefoneValido(String telefone) {
-        String digitos = telefone.replaceAll("[^0-9]", "");
-        return digitos.matches("^[0-9]{10,11}$");
+    private boolean isTelefoneValido(String telefoneLimpo) {
+
+        return telefoneLimpo.matches("^[0-9]{10,11}$");
     }
 
     private boolean isSenhaValida(String senha) {
