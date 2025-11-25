@@ -1,7 +1,5 @@
 import { Routes } from '@angular/router';
-import { AlertaRiscoComponent } from './alertas/alerta-risco/alerta-risco.component';
-
-  //rotas da home, cadastro e login
+ 
 export const routes: Routes = [
 
   { 
@@ -17,13 +15,13 @@ export const routes: Routes = [
     loadComponent: () => import('./login/login.component').then(m => m.LoginComponent) 
   },
 
-  //rotas que usam o layout do template
+  
   { 
-    path: 'layout', //todas as rotas que começam com 'layout', vao caregar primeiro a sidebar e a header
+    path: 'layout', 
 
     loadComponent: () => import('./template/template.component').then(m => m.TemplateComponent),
     
-    //children define o que vai ser carregado dentro do <router-outlet>
+ 
     children: [
       {
         path: '',
