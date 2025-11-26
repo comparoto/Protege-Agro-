@@ -1,8 +1,10 @@
 <div *ngIf="dadosClima; else carregando" style="text-align: center;">
+  
   <h4>{{ dadosClima.name }}</h4>
+  
   <h2 style="color: green;">{{ dadosClima.main.temp | number:'1.0-0' }}°C</h2>
-  <p>{{ dadosClima.weather[0].description }}</p>
-</div>
+  
+  </div>
 
 <ng-template #carregando>
   <p>Carregando clima...</p>
