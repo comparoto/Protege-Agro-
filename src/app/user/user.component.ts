@@ -25,8 +25,8 @@ export class UserComponent implements OnInit {
     this.userName = this.authService.getNomeUsuario();
   }
 
-
   onGerarRelatorio(): void {
-    alert('Um relatório será gerado em breve.');
+  
+    this.authService.baixarRelatorio('relatorio-geral.png');
   }
 }
