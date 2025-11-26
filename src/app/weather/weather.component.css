@@ -1,24 +1,32 @@
-/* Isso garante que o componente ocupe o espaço e centralize o texto */
-:host {
-  display: block;
-  width: 100%;
+/* Container principal */
+.weather-widget {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
 }
 
-h4 {
+/* O nome da cidade */
+.city-name {
   margin: 0;
-  color: #555;
+  color: #666;
   font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-h2 {
+/* A temperatura gigante */
+.temp-value {
   margin: 10px 0;
-  font-size: 3rem; /* Temperatura bem grande */
-  color: #2c5e2e; /* Verde Agro */
+  font-size: 3.5rem; /* Bem grande */
+  font-weight: bold;
+  color: #2e7d32; /* Verde Agro */
 }
 
-p {
-  color: #888;
-  text-transform: capitalize; /* Primeira letra maiúscula */
+/* O carregar */
+.loading-container {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
 }

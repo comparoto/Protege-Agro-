@@ -1,19 +1,15 @@
-<div style="text-align: center; font-family: sans-serif;">
-  
-  <h3>Debug do Clima</h3>
-  
-  <pre style="background: #eee; padding: 10px; font-size: 10px; text-align: left;">
-    {{ dadosClima | json }}
-  </pre>
+@if (dadosClima) {
+  <div class="weather-widget">
+    
+    <h4 class="city-name">{{ dadosClima.name }}</h4>
+    
+    <h2 class="temp-value">
+      {{ dadosClima.main.temp | number:'1.0-0' }}°C
+    </h2>
 
-  <hr>
-
-  @if (dadosClima) {
-    <h2 style="color: green;">SUCESSO!</h2>
-    <h1>{{ dadosClima.name }}</h1>
-    <h1>{{ dadosClima.main.temp }}</h1> 
-  } @else {
-    <h2 style="color: red;">Ainda carregando...</h2>
-  }
-
-</div>
+    </div>
+} @else {
+  <div class="loading-container">
+    <p>Atualizando...</p>
+  </div>
+}
