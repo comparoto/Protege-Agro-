@@ -1,11 +1,9 @@
-/* Container principal */
 .weather-widget {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
 }
 
-/* O nome da cidade */
 .city-name {
   margin: 0;
   color: #666;
@@ -15,15 +13,13 @@
   letter-spacing: 1px;
 }
 
-/* A temperatura gigante */
 .temp-value {
   margin: 10px 0;
-  font-size: 3.5rem; /* Bem grande */
+  font-size: 3.5rem; 
   font-weight: bold;
-  color: #2e7d32; /* Verde Agro */
+  color: #2e7d32; 
 }
 
-/* O carregar */
 .loading-container {
   text-align: center;
   padding: 40px;

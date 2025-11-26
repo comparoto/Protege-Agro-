@@ -15,7 +15,24 @@ import { WeatherComponent } from '../../weather/weather.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PropriedadesComponent {
+cidadeAtual: string = 'Recife';
 
+  locaisDasPropriedades: any = {
+    'todas': 'Recife',
+    'prop1': 'Olinda', 
+    'prop2': 'Caruaru', 
+    'prop3': 'Gravatá',
+    'prop4': 'Bonito'
+  };
+
+  aoTrocarPropriedade(evento: any) {
+    const idSelecionado = evento.target.value;
+    
+    
+    this.cidadeAtual = this.locaisDasPropriedades[idSelecionado] || 'Recife';
+    
+    console.log("Trocando para:", this.cidadeAtual);
+  }
 
   constructor(private authService: AuthService) { }
 
@@ -29,3 +46,4 @@ export class PropriedadesComponent {
   }
 
 }
+
