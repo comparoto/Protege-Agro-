@@ -1,15 +1,19 @@
-@if (dadosClima) {
-  <div style="text-align: center; font-family: sans-serif;">
-    
-    <h4 style="margin-bottom: 5px; color: #555;">{{ dadosClima.name }}</h4>
-    
-    <h2 style="margin: 0; font-size: 3rem; color: #2e7d32;">
-      {{ dadosClima.main.temp | number:'1.0-0' }}°C
-    </h2>
+<div style="text-align: center; font-family: sans-serif;">
+  
+  <h3>Debug do Clima</h3>
+  
+  <pre style="background: #eee; padding: 10px; font-size: 10px; text-align: left;">
+    {{ dadosClima | json }}
+  </pre>
 
-  </div>
-} @else {
-  <div style="text-align: center; padding: 20px;">
-    <p style="color: #999;">Carregando...</p>
-  </div>
-}
+  <hr>
+
+  @if (dadosClima) {
+    <h2 style="color: green;">SUCESSO!</h2>
+    <h1>{{ dadosClima.name }}</h1>
+    <h1>{{ dadosClima.main.temp }}</h1> 
+  } @else {
+    <h2 style="color: red;">Ainda carregando...</h2>
+  }
+
+</div>
