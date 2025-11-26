@@ -1,12 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
-import { HttpClientModule } from '@angular/common/http';
 import { WeatherService } from '../weather'; 
 
 @Component({
   selector: 'app-weather',
   standalone: true,
-  imports: [CommonModule, HttpClientModule], 
+  imports: [CommonModule], 
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
 })

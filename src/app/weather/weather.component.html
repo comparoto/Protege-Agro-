@@ -1,11 +1,15 @@
-<div *ngIf="dadosClima; else carregando" style="text-align: center;">
-  
-  <h4>{{ dadosClima.name }}</h4>
-  
-  <h2 style="color: green;">{{ dadosClima.main.temp | number:'1.0-0' }}°C</h2>
-  
-  </div>
+@if (dadosClima) {
+  <div style="text-align: center; font-family: sans-serif;">
+    
+    <h4 style="margin-bottom: 5px; color: #555;">{{ dadosClima.name }}</h4>
+    
+    <h2 style="margin: 0; font-size: 3rem; color: #2e7d32;">
+      {{ dadosClima.main.temp | number:'1.0-0' }}°C
+    </h2>
 
-<ng-template #carregando>
-  <p>Carregando clima...</p>
-</ng-template>
+  </div>
+} @else {
+  <div style="text-align: center; padding: 20px;">
+    <p style="color: #999;">Carregando...</p>
+  </div>
+}
