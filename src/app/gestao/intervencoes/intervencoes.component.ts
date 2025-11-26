@@ -23,7 +23,7 @@ export class IntervencoesComponent implements OnInit {
   }
 
   onFazerUpload(): void {
-    alert('A funcionalidade de upload será implementada em breve.');
+    alert('Seu upload será adicionado em breve.');
   }
 
 }

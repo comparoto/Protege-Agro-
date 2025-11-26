@@ -86,10 +86,6 @@
   color: #333;
 }
 
-.custom-list li.item-empty::before {
-  content: '□';
-  color: #555;
-}
 
 .default-list {
   list-style: disc; 

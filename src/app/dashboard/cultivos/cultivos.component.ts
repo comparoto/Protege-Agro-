@@ -25,7 +25,7 @@ export class CultivosComponent implements OnInit {
   }
 
   onFazerUpload(): void {
-    alert('A função de upload será implementada em breve.');
+    alert('Seu upload será adicionado em breve.');
   }
 
 }
