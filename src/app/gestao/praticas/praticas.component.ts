@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-praticas',
@@ -13,13 +14,14 @@ import { CommonModule } from '@angular/common';
 })
 export class PraticasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
   onGerarRelatorio(): void {
-    alert('Um relatório será gerado em breve.');
+   
+    this.authService.baixarRelatorio('relatorio-boas-praticas.png');
   }
 
   onFazerUpload(): void {

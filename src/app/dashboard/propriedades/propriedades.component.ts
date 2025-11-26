@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../auth.service'; 
 
 @Component({
   selector: 'app-propriedades',
@@ -13,10 +14,12 @@ import { CommonModule } from '@angular/common';
 })
 export class PropriedadesComponent {
 
-  constructor() { }
+
+  constructor(private authService: AuthService) { }
 
   onGerarRelatorio(): void {
-    alert('Um relatório será gerado em breve.');
+    
+    this.authService.baixarRelatorio('relatorio-indicadores-de-vulnerabilidade-por-propriedade.png');
   }
 
   onFazerUpload(): void {

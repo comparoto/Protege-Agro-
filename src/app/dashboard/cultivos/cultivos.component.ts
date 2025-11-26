@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-cultivos',
@@ -15,13 +16,15 @@ import { RouterModule } from '@angular/router';
 })
 export class CultivosComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
   onGerarRelatorio(): void {
-    alert('Um relatório será gerado em breve.');
+    
+    this.authService.baixarRelatorio('relatorio-indicadores-de-vulnerabilidade-por-cultivos.png');
   }
 
   onFazerUpload(): void {

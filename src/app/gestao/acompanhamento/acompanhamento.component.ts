@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-acompanhamento',
@@ -13,13 +14,15 @@ import { CommonModule } from '@angular/common';
 })
 export class AcompanhamentoComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
   onGerarRelatorio(): void {
-    alert('Um relatório será gerado em breve.');
+
+    this.authService.baixarRelatorio('relatorio-acompanhamento-de-eficacia.png');
   }
 
   onFazerUpload(): void {

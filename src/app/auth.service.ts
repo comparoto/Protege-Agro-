@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment'; 
 import { Observable } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,9 +13,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
- 
   public login(dadosLogin: any): Observable<any> {
-
     return this.http.post<any>(`${this.apiUrl}/api/auth/login`, dadosLogin);
   }
 
@@ -34,5 +31,29 @@ export class AuthService {
 
   limparDadosUsuario(): void {
     sessionStorage.removeItem(this.USER_NAME_KEY);
+  }
+
+  public baixarRelatorio(nomeArquivo: string): void {
+  
+    const caminho = `/${nomeArquivo}`;
+
+    this.http.get(caminho, { responseType: 'blob' }).subscribe({
+      next: (blob) => {
+        const url = window.URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = nomeArquivo; 
+        document.body.appendChild(a);
+        a.click();
+        
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      },
+      error: (erro) => {
+        console.error('Erro ao baixar a imagem:', erro);
+        alert('Não foi possível encontrar o arquivo: ' + nomeArquivo);
+      }
+    });
   }
 }
