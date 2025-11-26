@@ -1,12 +1,14 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../auth.service'; 
+import { WeatherComponent } from '../../weather/weather.component';
 
 @Component({
   selector: 'app-propriedades',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    WeatherComponent
   ],
   templateUrl: './propriedades.component.html',
   styleUrls: ['./propriedades.component.css'],
