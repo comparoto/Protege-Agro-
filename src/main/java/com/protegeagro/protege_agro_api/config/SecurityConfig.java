@@ -23,7 +23,7 @@ public class SecurityConfig {
                     CorsConfiguration configuration = new CorsConfiguration();
 
                     configuration.setAllowedOrigins(List.of(
-                            "https://protege-agro-front.onrender.com"
+                            "https://protege-agro-site.onrender.com"
 
                     ));
 
