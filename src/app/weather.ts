@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class WeatherService {
 
   // IMPORTANTE: Coloque a URL do seu backend no Render aqui
-  private apiUrl = 'https://protege-agro-back.onrender.com';
+  private apiUrl = 'https://protege-agro-back.onrender.com/api/clima';
 
   constructor(private http: HttpClient) { }
 
