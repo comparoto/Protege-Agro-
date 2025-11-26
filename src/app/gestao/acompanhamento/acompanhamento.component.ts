@@ -1,12 +1,14 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-acompanhamento',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './acompanhamento.component.html',
   styleUrls: ['./acompanhamento.component.css'],

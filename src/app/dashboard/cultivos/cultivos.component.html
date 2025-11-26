@@ -10,7 +10,7 @@
       <option value="milho">Milho</option>
       <option value="soja">Soja</option>
       <option value="algodao">Algodão</option>
-      <option value="algodao">Café</option>
+      <option value="cafe">Café</option>
     </select>
   </div>
   <div class="actions-group">
@@ -64,6 +64,17 @@
 </div>
 
 <div class="cards-grid">
+ 
+   <div class="card">
+    <div class="card-header">
+      <h3>Temperatura atual</h3>
+    </div>
+    <div class="card-content" style="display: flex; justify-content: center; align-items: center; min-height: 200px;">
+      
+      <app-weather [cidade]="cidadeAtual"></app-weather>
+
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header">

@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { AuthService } from '../../auth.service'; 
 import { WeatherComponent } from '../../weather/weather.component';
 
@@ -8,6 +9,7 @@ import { WeatherComponent } from '../../weather/weather.component';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     WeatherComponent
   ],
   templateUrl: './propriedades.component.html',

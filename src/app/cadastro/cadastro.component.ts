@@ -7,7 +7,12 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterLink],
+  imports: [
+    ReactiveFormsModule, 
+    CommonModule, 
+    RouterLink
+  ],
+  
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.css'
 })
