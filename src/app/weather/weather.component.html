@@ -2,22 +2,6 @@
   <div class="weather-widget">
     
     <h4 class="city-name">{{ dadosClima.name }}</h4>
-    
-    <h2 class="temp-value">
-      {{ dadosClima.main.temp | number:'1.0-0' }}°C
-    </h2>
-
-    </div>
-} @else {
-  <div class="loading-container">
-    <p>Atualizando...</p>
-  </div>
-}
-
-@if (dadosClima) {
-  <div class="weather-widget">
-    
-    <h4 class="city-name">{{ dadosClima.name }}</h4>
     <h2 class="temp-value">
       {{ dadosClima.main.temp | number:'1.0-0' }}°C
     </h2>
@@ -41,7 +25,7 @@
     </div>
 
   </div>
-  
+
 } @else {
   <div class="loading-container">
     <p>Atualizando...</p>
