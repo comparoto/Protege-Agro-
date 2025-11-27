@@ -26,3 +26,28 @@
   color: #999;
   font-style: italic;
 }
+
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 10px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.forecast-date {
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.forecast-temp {
+  font-weight: bold;
+  color: #555;
+}

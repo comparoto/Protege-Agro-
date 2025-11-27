@@ -14,4 +14,9 @@ export class WeatherService {
   buscarClima(cidade: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/${cidade}`);
   }
+  
+  buscarPrevisao(cidade: string): Observable<any> {
+
+    return this.http.get(`${this.apiUrl}/previsao/${cidade}`);
+}
 }

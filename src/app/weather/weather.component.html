@@ -13,3 +13,37 @@
     <p>Atualizando...</p>
   </div>
 }
+
+@if (dadosClima) {
+  <div class="weather-widget">
+    
+    <h4 class="city-name">{{ dadosClima.name }}</h4>
+    <h2 class="temp-value">
+      {{ dadosClima.main.temp | number:'1.0-0' }}°C
+    </h2>
+
+    <hr style="opacity: 0.3; margin: 15px 0;">
+
+    <div style="display: flex; justify-content: space-around;">
+      
+  @for (item of listaPrevisao; track item.dt_txt) {
+        <div style="text-align: center; font-size: 0.9rem;">
+          <p style="margin: 0; color: #888; font-size: 0.8rem;">
+            {{ item.dt_txt | date:'dd/MM' }}
+          </p>
+          
+          <p style="margin: 5px 0; font-weight: bold; color: #555;">
+            {{ item.main.temp | number:'1.0-0' }}°C
+          </p>
+        </div>
+      }
+
+    </div>
+
+  </div>
+  
+} @else {
+  <div class="loading-container">
+    <p>Atualizando...</p>
+  </div>
+}
