@@ -21,4 +21,11 @@ public class ClimaService {
 
         return clima;
     }
+    public PrevisaoDTO buscarPrevisao(String cidade) {
+
+        String url = "https://api.openweathermap.org/data/2.5/forecast?q=" + cidade + "&appid=" + API_KEY + "&units=metric&lang=pt_br";
+
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(url, PrevisaoDTO.class);
+    }
 }

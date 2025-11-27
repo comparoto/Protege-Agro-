@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/clima")
-// O @CrossOrigin libera o Angular (porta 4200) para acessar o Java
+
 @CrossOrigin(origins = "https://protege-agro-site.onrender.com")
 public class ClimaController {
 
@@ -19,5 +19,9 @@ public class ClimaController {
     public ResponseEntity<ClimaDTO> getClima(@PathVariable String cidade) {
         ClimaDTO clima = climaService.buscarClima(cidade);
         return ResponseEntity.ok(clima);
+    }
+    @GetMapping("/previsao/{cidade}")
+    public ResponseEntity<PrevisaoDTO> getPrevisao(@PathVariable String cidade) {
+        return ResponseEntity.ok(climaService.buscarPrevisao(cidade));
     }
 }
