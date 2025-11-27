@@ -1,5 +1,6 @@
 package com.protegeagro.protege_agro_api.dto;
 
+
 public class ClimaDTO {
 
     private Main main;

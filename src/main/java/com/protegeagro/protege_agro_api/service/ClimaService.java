@@ -1,6 +1,7 @@
 package com.protegeagro.protege_agro_api.service;
 
 import com.protegeagro.protege_agro_api.dto.ClimaDTO;
+import com.protegeagro.protege_agro_api.dto.PrevisaoDTO;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
