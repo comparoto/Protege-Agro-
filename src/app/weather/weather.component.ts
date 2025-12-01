@@ -18,7 +18,7 @@ export class WeatherComponent implements OnInit, OnChanges {
   constructor(private weatherService: WeatherService, private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    if(!this.cidade) this.cidade = 'Sorriso';
+    if(!this.cidade) this.cidade = 'Recife';
     this.carregarTudo(this.cidade);
   }
 
