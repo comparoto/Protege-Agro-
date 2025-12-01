@@ -1,6 +1,6 @@
-package com.protegeagro.protege_agro_api.repository;
+package com.protegeagro.protege.agro.api.repository;
 
-import com.protegeagro.protege_agro_api.model.Usuario;
+import com.protegeagro.protege.agro.api.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

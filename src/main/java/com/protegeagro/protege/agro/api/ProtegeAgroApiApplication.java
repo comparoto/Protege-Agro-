@@ -1,6 +1,6 @@
-package com.protegeagro.protege_agro_api;
+package com.protegeagro.protege.agro.api;
 
-import com.protegeagro.protege_agro_api.repository.UsuarioRepository;
+import com.protegeagro.protege.agro.api.repository.UsuarioRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

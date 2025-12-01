@@ -1,16 +1,15 @@
-package com.protegeagro.protege_agro_api.controller;
+package com.protegeagro.protege.agro.api.controller;
 
-import com.protegeagro.protege_agro_api.dto.CadastroRequestDTO;
-import com.protegeagro.protege_agro_api.dto.LoginRequestDTO;
-import com.protegeagro.protege_agro_api.model.Usuario;
-import com.protegeagro.protege_agro_api.service.AutenticacaoService;
+import com.protegeagro.protege.agro.api.dto.CadastroRequestDTO;
+import com.protegeagro.protege.agro.api.dto.LoginRequestDTO;
+import com.protegeagro.protege.agro.api.model.Usuario;
+import com.protegeagro.protege.agro.api.service.AutenticacaoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-@CrossOrigin(origins = "https://protege-agro-site.onrender.com")
 @RestController
 @RequestMapping("/api/auth")
 public class AutenticacaoController {

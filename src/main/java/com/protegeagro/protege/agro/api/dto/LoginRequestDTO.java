@@ -1,4 +1,4 @@
-package com.protegeagro.protege_agro_api.dto;
+package com.protegeagro.protege.agro.api.dto;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.protegeagro.protege_agro_api.model;
+package com.protegeagro.protege.agro.api.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

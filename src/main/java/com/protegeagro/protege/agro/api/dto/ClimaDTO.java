@@ -1,10 +1,9 @@
-package com.protegeagro.protege_agro_api.dto;
-
+package com.protegeagro.protege.agro.api.dto;
 
 public class ClimaDTO {
 
     private Main main;
-    private String name; // Nome da cidade
+    private String name;
 
     public Main getMain() { return main; }
     public void setMain(Main main) { this.main = main; }

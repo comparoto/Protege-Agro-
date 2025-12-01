@@ -1,8 +1,8 @@
-package com.protegeagro.protege_agro_api.controller;
+package com.protegeagro.protege.agro.api.controller;
 
-import com.protegeagro.protege_agro_api.dto.ClimaDTO;
-import com.protegeagro.protege_agro_api.service.ClimaService;
-import com.protegeagro.protege_agro_api.dto.PrevisaoDTO;
+import com.protegeagro.protege.agro.api.dto.ClimaDTO;
+import com.protegeagro.protege.agro.api.service.ClimaService;
+import com.protegeagro.protege.agro.api.dto.PrevisaoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/clima")
 
-@CrossOrigin(origins = "https://protege-agro-site.onrender.com")
 public class ClimaController {
 
     @Autowired

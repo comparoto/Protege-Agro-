@@ -1,4 +1,4 @@
-package com.protegeagro.protege_agro_api.config;
+package com.protegeagro.protege.agro.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,9 +1,9 @@
-package com.protegeagro.protege_agro_api.service;
+package com.protegeagro.protege.agro.api.service;
 
-import com.protegeagro.protege_agro_api.dto.CadastroRequestDTO;
-import com.protegeagro.protege_agro_api.dto.LoginRequestDTO;
-import com.protegeagro.protege_agro_api.model.Usuario;
-import com.protegeagro.protege_agro_api.repository.UsuarioRepository;
+import com.protegeagro.protege.agro.api.dto.CadastroRequestDTO;
+import com.protegeagro.protege.agro.api.dto.LoginRequestDTO;
+import com.protegeagro.protege.agro.api.model.Usuario;
+import com.protegeagro.protege.agro.api.repository.UsuarioRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

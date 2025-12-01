@@ -1,4 +1,4 @@
-package com.protegeagro.protege_agro_api;
+package com.protegeagro.protege.agro.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
