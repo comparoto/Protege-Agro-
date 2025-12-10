@@ -47,4 +47,4 @@ Pensou em alguma ideia para melhorar nosso projeto?
 
 ## Licença
 
-Ao contribuir com o Protege Agro 👨‍🌾, você concorda que suas contribuições serão licenciadas sob a nossa [Licença do Projeto](LICENSE.md).
+Ao contribuir com o Protege Agro 👨‍🌾, você concorda que suas contribuições serão licenciadas sob a nossa [Licença do Projeto](LICENSE).
