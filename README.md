@@ -7,7 +7,8 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 - [Trello](https://trello.com/invite/b/68d3017f957b203c71729554/ATTIfd6518690457f8129206f304484740d71D224D60/protege-agro) - Gestão do Projeto
 - [Figma](https://www.figma.com/design/D40oNqrRF186K4n1DSMg0C/PROTEGE-AGRO---PROTOTIPO-1?node-id=0-1&t=hrwbZLeeoK0QofQZ-1) - Prototipação do Sistema
 - Angular CLI - Front-End
-- Java Spring Boot - Back-end 
+- Java Spring Boot - Back-end
+- [ 📁 Arquivos ZIP](https://drive.google.com/drive/folders/1Je6x58tEThfhYkg-JhAMgvvaDkHmQvFk?usp=sharing)
 
 
 # 💻 Funcionalidades
