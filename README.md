@@ -22,7 +22,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 
 # 📹 Screencasts
 
-- [ 📽️ Demonstração do projeto implementado em telas ](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
+- [ 📽️ Demonstração do projeto implementado em telas ](https://drive.google.com/file/d/1-bGMtp56LW-q1K8OvQy9O07tlwFDv3Kv/view?usp=sharing)
 - [ 🚨 Testes de sistema ](https://drive.google.com/drive/folders/1nubKSo0hI0flXN4taropGHaZbeiQywIc?usp=sharing)
 - [ 💻 DEPLOY](https://protege-agro-site.onrender.com)
   
