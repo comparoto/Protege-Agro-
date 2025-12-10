@@ -24,7 +24,7 @@ O projeto Protege Agro está sendo desenvolvido com o objetivo de solucionar o p
 - [ 📽️ Demonstração do projeto implementado em telas ](https://drive.google.com/file/d/1UqRY5Xc5wz6YIeONaB4KeJ6wc25MrAoK/view?usp=drive_link)
 - [ 📽️ Testes de sistema ](https://drive.google.com/drive/folders/1nubKSo0hI0flXN4taropGHaZbeiQywIc?usp=sharing)
 - [ 💻 DEPLOY](https://protege-agro-site.onrender.com)
-- [ 📄 Documentação](https://docs.google.com/document/d/1_AT1_uWjzGIP6CKZm2aR2wxMMDq8Yy9EOQ8_LANWxvY/edit?usp=sharing)
+- [ 📄 Configurando Ambiente Dev](https://docs.google.com/document/d/1_AT1_uWjzGIP6CKZm2aR2wxMMDq8Yy9EOQ8_LANWxvY/edit?usp=sharing)
 - [ 📁 Arquivos ZIP](https://drive.google.com/drive/folders/1Je6x58tEThfhYkg-JhAMgvvaDkHmQvFk?usp=sharing)
   
 # Tela inicial 
