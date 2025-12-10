@@ -19,7 +19,7 @@ As orientações a seguir ajudarão você a entender como nosso projeto funciona
 ### Relatando Bugs
 
 Se você encontrou um bug, por favor, relate e nos ajude!
-1.  **Verifique se o bug já foi relatado e resolvido** na nossa lista de [Issues](link).
+1.  **Verifique se o bug já foi relatado e resolvido** na nossa lista de [Issues](https://github.com/comparoto/Protege-Agro/issues).
 2.  Se não encontrar, crie um novo Issue.
 3.  Inclua:
     * Como encontrou o problema.
@@ -29,17 +29,17 @@ Se você encontrou um bug, por favor, relate e nos ajude!
 ### Sugerindo Melhorias
 
 Pensou em alguma ideia para melhorar nosso projeto?
-1.  Verifique nos [Issues](link-para-issues) se a sugestão já foi feita.
+1.  Verifique nos [Issues](https://github.com/comparoto/Protege-Agro/issues) se a sugestão já foi feita.
 2.  Abra um novo Issue.
 3.  Descreva detalhadamente a funcionalidade e por que ela seria útil no contexto do projeto.
 
 ### Contribuindo 
 
-1.  **Git Clone:** Faça um Git Clone do projeto e clone-o localmente [instruções aqui](link).
-2.  **Ambiente:** Veja como configurar o ambiente de desenvolvimento [aqui](link).
-3.  **Branch:** Crie uma branch para sua alteração (`git checkout -b feature/minha-melhoria`).
+1.  **Git Clone:** Faça um Git Clone do projeto e clone-o localmente [instruções aqui](https://docs.google.com/document/d/106dHBq1Dvh3v4lyq9Ho4gCklfn1csLB23nPpRdlyafw/edit?usp=sharing).
+2.  **Ambiente:** Veja como configurar o ambiente de desenvolvimento [instruções aqui](https://docs.google.com/document/d/1_AT1_uWjzGIP6CKZm2aR2wxMMDq8Yy9EOQ8_LANWxvY/edit?usp=sharing).
+3.  **Branch:** Crie uma branch para sua alteração [instruções aqui](https://docs.google.com/document/d/106dHBq1Dvh3v4lyq9Ho4gCklfn1csLB23nPpRdlyafw/edit?usp=sharing).
 4.  **Testes:** Certifique-se de testar em ambiente dev (máquina local) antes de fazer o push.
-5.  **Envio:** Faça o push e abra um Pull Request descrevendo suas alterações.
+5.  **Envio:** Faça o push e abra um Pull Request descrevendo suas alterações. [instruções aqui](https://docs.google.com/document/d/106dHBq1Dvh3v4lyq9Ho4gCklfn1csLB23nPpRdlyafw/edit?usp=sharing).
 
 > **Nota:** Por favor, ao realizar commit, deixe uma mensagem realmente explicativa e direta!
 
